@@ -1,0 +1,146 @@
+@import "../../../styles.scss";
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: none;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 20px 0;
+    }
+    button{
+      @media (min-width: $width1) and (max-width: $width2) {
+        position: relative;
+        top: 12px;
+        padding: 0;
+        border: none;
+      }
+      svg{
+        display: block;
+        margin-bottom: 4px;
+        width: 31px;
+        height: 4px;
+      }
+    }
+    .container-fluid{
+        padding: 0 100px;
+        position: relative;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 0 20px;
+          position: relative;
+          flex-direction: row-reverse;
+        }
+        .navbar-brand{
+            width: 150px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              width: 89px;
+              position: relative;
+              left: -48%;
+              top: 8px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .collapse{
+            margin-left: 23%;
+            @media (min-width: $width1) and (max-width: $width2) {
+              background: rgb(0,0,0,0.9);
+              padding: 0px 0px 30px 0px;
+              margin-left: 0;
+              border-bottom-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+              margin-top: 20px;
+              text-align: center;
+              position: relative;
+              z-index: 99;
+            }
+            @media (min-width: 1530px) and (max-width: 2000px) {
+              margin-left: 30%;
+            }
+            ul{
+                @media (min-width: $width1) and (max-width: $width2) {
+                  padding: 0;
+                }
+                li{
+                    margin-right: 70px;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      margin-right: unset;
+                      padding: 0;
+                      border-bottom: 1px solid #c2f2db;
+                    }
+                    @media (min-width: 1530px) and (max-width: 2000px) {
+                      margin-right: 90px;
+                    }
+                    a{
+                        font-weight: bold;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #100024;
+                        padding: 30px 0;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          color: #FFF;
+                          font-size: 15px;
+                          padding: 22px 0;
+                        }
+
+                    }
+                }
+            }
+            form{
+              @media (min-width: $width1) and (max-width: $width2) {
+                width: 86%;
+                margin: 0 auto;
+                position: relative;
+                display: block!important;
+              }
+                button{
+                    border: none;
+
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      display: inline-block;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 17px;
+                        line-height: 20px;
+                        text-align: right;
+                        color: #FFF;
+                        font-weight: normal;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          font-size: 15px;
+                         }
+                    }
+                }
+                .signin{
+                    background-color: unset;
+                    margin-right: 50px;
+                    a{
+                        color: #1A191D;
+                        font-weight: bold;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          color: #FFF;
+                        }
+                    }
+                }
+                .signup{
+                    background: linear-gradient(262.11deg, #00D772 -13.2%, #003827 289.78%);
+                    border-radius: 68px;
+                    padding: 10px 50px;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      padding: 7px 34px;
+                     }
+                }
+            }
+        }
+    }
+}
+
+.show{
+    display: inline-block!important;
+}

@@ -1,0 +1,476 @@
+<div class="content">
+  <div class="shape-one"></div>
+  <div class="shape-two"></div>
+  <div class="shape-three"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="heading">
+          <h3>Adobe PhotoShop</h3>
+        </div>
+        <div class="img-cont">
+          <img src="./assets/img/lesson-bg.png" alt="...">
+        </div>
+        <div class="nav-tab">
+          <ul class="nav nav-tabs">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide >
+                  <li class="active home"><button type="button" (click)="sowDesc($event)">Description</button></li>
+                </ng-template>
+                <ng-template carouselSlide >
+                  <li class="menu1"><button type="button" (click)="showRev($event)" >Discussion</button></li>
+                </ng-template>
+                <ng-template carouselSlide >
+                  <li class="projects"><button type="button" (click)="showPro($event)" >Projects & Ressources</button></li>
+                </ng-template>
+                <ng-template carouselSlide >
+                  <li class="office"><button type="button" (click)="showOff($event)" >Office Hours</button></li>
+                </ng-template>
+            </owl-carousel-o>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane active">
+              <h3>Digital Arts</h3>
+              <p>Learn Adobe Photoshop from scratch and master the best software for treatment, retouching and creation of digital images on the market.<button type="button" class="sohw-more" (click)="showMoreText()">Read More</button></p>
+              <div class="text">
+                <p>  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h6>Who is it for?</h6>
+                <p>  These are introductory courses and no prior knowledge of any kind is necessary. That said, it's aimed at anyone interested in getting started with Adobe Photoshop.</p>
+                <h6>Technical requirements</h6>
+                <ol>
+                  <li>Adobe Photoshop CC (not included in the price of the course, but available on the Adobe website with a license and 7-day trial period).</li>
+                  <li>Windows 7 operating system (or higher) or macOS El Capitan (or higher).</li>
+                  <li>A graphic tablet is recommended, although it's not essential.</li>
+                </ol>
+              </div>
+            </div>
+            <div id="menu1" class="tab-pane">
+              <div class="heading">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="img-cont">
+                      <img src="./assets/img/user-profile.png" alt="user image">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="conv">
+                      <button type="button" class="active" (click)="showConv()">Start conversation</button>
+                      <button type="button" (click)="showQuestion()">Ask a question</button>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 310.7 310.49" style="enable-background:new 0 0 310.7 310.49;" xml:space="preserve">
+                        <path class="st0" d="M310.7,0c-33.21,104.17-66.09,207.3-98.99,310.49c-2.13-0.89-2.46-2.75-3.23-4.23
+                        c-22.54-43.39-45.08-86.79-67.5-130.23c-1.52-2.95-3.52-4.81-6.44-6.32c-43.6-22.52-87.14-45.15-130.68-67.76
+                        c-1.19-0.62-2.52-1.06-3.84-2.87C103.43,66.09,206.52,33.22,310.7,0z M206.51,262.92c0.42,0.02,0.84,0.04,1.25,0.06
+                        c22.67-71.11,45.35-142.21,68.21-213.89c-2.52,0.64-3.41,2-4.47,3.07c-37.19,37.17-74.38,74.35-111.55,111.54
+                        c-3.23,3.23-3.24,3.27-1.09,7.42c12.68,24.49,25.36,48.97,38.06,73.46C200.09,250.7,203.31,256.8,206.51,262.92z M261.62,34.72
+                        c-71.47,22.79-142.67,45.5-214.36,68.36c1.51,2.01,3.17,2.57,4.63,3.32c29.08,15.08,58.18,30.14,87.27,45.22
+                        c5.04,2.62,4.17,2.81,8.24-1.25c37.05-37.03,74.09-74.07,111.1-111.13C259.66,38.08,261.32,37.22,261.62,34.72z"/>
+                      </svg>
+                    </div>
+                    <form method="post" action="" class="conversation">
+                      <input type="text" class="form-control" name="message" placeholder="start your conversation">
+                      <button type="submit">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 310.7 310.49" style="enable-background:new 0 0 310.7 310.49;" xml:space="preserve">
+                          <path class="st0" d="M310.7,0c-33.21,104.17-66.09,207.3-98.99,310.49c-2.13-0.89-2.46-2.75-3.23-4.23
+                          c-22.54-43.39-45.08-86.79-67.5-130.23c-1.52-2.95-3.52-4.81-6.44-6.32c-43.6-22.52-87.14-45.15-130.68-67.76
+                          c-1.19-0.62-2.52-1.06-3.84-2.87C103.43,66.09,206.52,33.22,310.7,0z M206.51,262.92c0.42,0.02,0.84,0.04,1.25,0.06
+                          c22.67-71.11,45.35-142.21,68.21-213.89c-2.52,0.64-3.41,2-4.47,3.07c-37.19,37.17-74.38,74.35-111.55,111.54
+                          c-3.23,3.23-3.24,3.27-1.09,7.42c12.68,24.49,25.36,48.97,38.06,73.46C200.09,250.7,203.31,256.8,206.51,262.92z M261.62,34.72
+                          c-71.47,22.79-142.67,45.5-214.36,68.36c1.51,2.01,3.17,2.57,4.63,3.32c29.08,15.08,58.18,30.14,87.27,45.22
+                          c5.04,2.62,4.17,2.81,8.24-1.25c37.05-37.03,74.09-74.07,111.1-111.13C259.66,38.08,261.32,37.22,261.62,34.72z"/>
+                        </svg>
+                      </button>
+                    </form>
+                    <form method="post" action="" class="question">
+                      <input type="text" class="form-control" name="question" placeholder="ask question">
+                      <button type="submit">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 310.7 310.49" style="enable-background:new 0 0 310.7 310.49;" xml:space="preserve">
+                          <path class="st0" d="M310.7,0c-33.21,104.17-66.09,207.3-98.99,310.49c-2.13-0.89-2.46-2.75-3.23-4.23
+                          c-22.54-43.39-45.08-86.79-67.5-130.23c-1.52-2.95-3.52-4.81-6.44-6.32c-43.6-22.52-87.14-45.15-130.68-67.76
+                          c-1.19-0.62-2.52-1.06-3.84-2.87C103.43,66.09,206.52,33.22,310.7,0z M206.51,262.92c0.42,0.02,0.84,0.04,1.25,0.06
+                          c22.67-71.11,45.35-142.21,68.21-213.89c-2.52,0.64-3.41,2-4.47,3.07c-37.19,37.17-74.38,74.35-111.55,111.54
+                          c-3.23,3.23-3.24,3.27-1.09,7.42c12.68,24.49,25.36,48.97,38.06,73.46C200.09,250.7,203.31,256.8,206.51,262.92z M261.62,34.72
+                          c-71.47,22.79-142.67,45.5-214.36,68.36c1.51,2.01,3.17,2.57,4.63,3.32c29.08,15.08,58.18,30.14,87.27,45.22
+                          c5.04,2.62,4.17,2.81,8.24-1.25c37.05-37.03,74.09-74.07,111.1-111.13C259.66,38.08,261.32,37.22,261.62,34.72z"/>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="chat">
+                <div class="row">
+                  <div class="col-md-2 col-4">
+                    <div class="img-cont">
+                      <img src="./assets/img/user-profile.png" alt="user image">
+                    </div>
+                  </div>
+                  <div class="col-md-10 col-8">
+                    <div class="header">
+                      <h3>Azza Khair Elseed</h3>
+                      <p>Last active 11 months ago</p>
+                    </div>
+                    <p class="message-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet.</p>
+                    <div class="actions">
+                      <a href="#">Like<span>.</span></a>
+                      <a href="#">Replay<span>.</span></a>
+                      <a href="#">Follow Thread</a>
+                      <span class="persons">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 591.96 376.14" style="enable-background:new 0 0 591.96 376.14;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:#1E1E1E;}
+                        </style>
+                        <path class="st0" d="M341.08,158.98c4.92,2.03,8.52,3.56,12.16,5.01c13.08,5.23,25.23,12.1,36.15,21c3.7,3.02,6.44,3.27,10.24-0.04
+                          c9.64-8.39,21.14-13.8,32.87-18.96c-0.57-4.28-4.35-5.83-6.74-8.35c-17.66-18.68-24.14-40.55-17.31-65.36
+                          c6.93-25.15,23.72-41.22,49.03-47.74c29.01-7.47,59.14,5.57,74.49,31.78c14.94,25.51,10.81,58.97-9.98,80.43
+                          c-2.53,2.61-5.28,5.02-7.87,7.47c0.29,3.43,3.34,3.04,5.18,3.87c39.71,17.98,63.44,48.41,71.46,91.19c1.36,7.26,1.07,14.6,1.2,21.93
+                          c0.06,3.34-1.29,4.92-4.72,4.73c-2.33-0.13-4.66,0-7,0c-39.66,0-79.31,0-118.97,0c-2.33,0-4.67-0.07-7,0.03
+                          c-6.41,0.27-6.43,0.3-6.34,6.88c0.09,6.66,0.04,13.33,0.36,19.99c1.59,32.5-25.66,62.37-61.29,63.24c-1.33,0.03-2.67,0.06-4,0.06
+                          c-58.32,0-116.64-0.01-174.95,0.01c-22.06,0-40.16-8.11-53.61-25.93c-8.36-11.07-11.9-23.74-12.13-37.37
+                          c-0.12-6.98,0.27-14,0.96-20.94c0.44-4.44-1.01-6.18-5.33-5.97c-2.33,0.11-4.66,0-7,0c-38.66,0-77.31,0-115.97,0c-2,0-4,0.03-6-0.01
+                          c-8.95-0.14-9.03-0.15-8.97-8.7c0.22-31.42,11.22-58.52,32.72-81.39c10.88-11.57,23.72-20.34,38.16-26.86
+                          c2.32-1.05,5.02-1.44,7.31-4.32c-19.28-15.83-28.8-36.07-26.74-61.2c1.34-16.33,8.21-30.15,19.74-41.5
+                          c24.88-24.5,64.36-25.88,91-3.33c10.72,9.08,17.92,20.52,21.43,34.15c3.41,13.24,2.76,26.27-1.47,39.35
+                          c-4.33,13.39-13.27,23.43-24.04,33.21c13.38,6.13,25.28,11.97,35.49,20.61c2.02,1.71,4.09,1.96,6.28,0.21
+                          c14.66-11.69,31-20.37,50.75-27c-28.97-21.04-43.23-47.92-40.27-82.14c2-23.2,12.61-42.69,30.67-57.58
+                          c35.68-29.41,88.13-24.84,118.92,9.69C386.58,59.01,394.73,118.79,341.08,158.98z M295.36,357.33c11.33,0,22.65,0,33.98,0
+                          c18.66-0.01,37.32,0.36,55.96-0.12c26.58-0.69,44.07-18.67,44.48-45.16c0.14-8.98-0.33-17.91-1.63-26.87
+                          c-10.19-70.14-76.45-121.24-146.83-113.29c-73.08,8.26-126.11,72.1-120.26,145.25c0.8,10.02,4.68,18.62,11.41,25.99
+                          c9.66,10.59,21.96,14.31,35.93,14.24C237.4,357.23,266.38,357.33,295.36,357.33z M362.03,85.63c0.1-37.26-29.89-67.28-67.16-67.2
+                          c-36.46,0.07-66.68,30.27-66.84,66.82c-0.17,36.63,30.72,67.44,67.47,67.3C332.03,152.41,361.93,122.33,362.03,85.63z
+                            M508.35,267.14c18.33,0,36.65,0.03,54.98-0.01c9.74-0.02,10.07-0.29,8.22-9.23c-2.38-11.49-6.58-22.3-12.68-32.38
+                          c-29.82-49.29-96.63-63.18-143.08-29.69c-7.81,5.63-7.96,5.8-2.12,12.83c12.73,15.32,22.03,32.53,27.79,51.51
+                          c1.7,5.61,4.39,7.17,9.91,7.09C470.36,266.96,489.35,267.13,508.35,267.14z M83.14,267.14c18.33,0,36.66,0.03,54.99-0.01
+                          c8.57-0.02,8.66-0.05,11.12-7.77c4.19-13.09,9.99-25.36,17.52-36.89c3.84-5.88,7.94-11.54,12.57-16.77
+                          c3.01-3.39,2.54-5.65-1.07-7.91c-2.25-1.41-4.29-3.17-6.53-4.61c-33.62-21.62-77.26-20.89-110.26,1.99
+                          c-21.47,14.88-34.98,35.3-41.08,60.62c-2.63,10.93-2.22,11.33,8.73,11.35C47.15,267.16,65.14,267.14,83.14,267.14z M69.44,109.47
+                          c-0.17,27.13,21.35,49.07,48.29,49.24c26.78,0.17,49.08-21.69,49.45-48.47c0.37-26.31-22.18-49.2-48.64-49.36
+                          C91.69,60.71,69.6,82.57,69.44,109.47z M472.91,158.71c26.87,0.21,49.19-21.67,49.35-48.38c0.16-26.91-21.69-49.28-48.34-49.47
+                          c-26.75-0.19-49,21.7-49.29,48.52C424.33,136.31,446.05,158.5,472.91,158.71z"/>
+                        </svg>
+                        2
+                      </span>
+                      <span class="likes">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 598.63 532.65" style="enable-background:new 0 0 598.63 532.65;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:#111111;}
+                        </style>
+                        <path class="st0" d="M0,167.19c0.52-33.81,13.51-75.98,44.4-111.53C69.56,26.7,101.22,8.73,139.17,2.6
+                          c63.18-10.2,113.5,12.43,153.39,61.02c1.06,1.29,2.19,2.53,3.11,3.91c2.72,4.09,4.89,3.17,7.53-0.3
+                          c8.71-11.42,18.57-21.74,29.57-31.04C401.35-21.7,502.14-6.71,555.04,56.78c36.69,44.04,49.08,95.04,41.43,151.3
+                          c-5.26,38.67-22.56,72.14-45.62,102.95c-25.08,33.51-54.87,62.6-86.23,90.06c-45.86,40.15-92.2,79.76-138.21,119.74
+                          c-11.64,10.12-24.2,15.03-39.47,9.51c-3.81-1.38-7.27-3.37-10.3-6.01c-61.02-53.16-124.28-103.77-182.23-160.4
+                          c-21.48-20.99-41.26-43.51-57.78-68.7C13.66,260.23-0.19,222.27,0,167.19z M34.82,191.95c-0.27,17.03,7.83,44.1,22.13,69.59
+                          c16.65,29.66,39.02,54.7,62.92,78.49c31.67,31.52,65.84,60.27,99.62,89.45c24.45,21.12,49.04,42.1,73.58,63.11
+                          c6.08,5.2,6.17,5.24,12.34,0.04c7.64-6.44,15.2-12.98,22.74-19.54c50.53-43.91,102.71-85.97,150.48-132.99
+                          c24.28-23.9,47.26-49.06,63.39-79.36c31.09-58.4,30.71-116.37-6.31-172.04c-28.32-42.59-83.82-62.83-132.75-50.39
+                          c-29.35,7.46-51.91,24.98-70.41,48.22c-5.38,6.76-9.85,14.24-15.01,21.19c-9.77,13.15-26.59,13.16-36.34,0.13
+                          c-1.99-2.66-3.75-5.5-5.59-8.28C267.64,87.59,258.27,76.9,247.8,67C195.52,17.52,113.23,28.16,70.24,79.02
+                          C45.69,108.08,35.14,142,34.82,191.95z"/>
+                        </svg>
+                        5
+                      </span>
+                    </div>
+                    <div class="replay">
+                      <div class="row">
+                        <div class="col-md-2 col-3">
+                          <div class="img-cont">
+                            <img src="./assets/img/user-profile.png" alt="user image">
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-9">
+                          <div class="header">
+                            <h3>Mahmoud Jebri</h3>
+                            <p>Teacher</p>
+                          </div>
+                          <p class="replay-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                          <div class="options">
+                            <a href="#">Like<span>.</span></a>
+                            <span>8 months ago</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2 col-3">
+                          <div class="img-cont">
+                            <img src="./assets/img/user-profile.png" alt="user image">
+                          </div>
+                        </div>
+                        <div class="col-md-10 col-9">
+                          <form method="post" action="">
+                            <input type="text" name="replay" class="form-control" placeholder="Leave a reply...">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="projects" class="tab-pane">
+
+            </div>
+            <div id="office" class="tab-pane">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 meet-teacher">
+        <hr class="line">
+        <div class="row for-rev">
+          <div class="col-12">
+            <div class="course-list">
+              <span class="level">Level <span class="beg">Beginners</span></span>
+              <span class="user">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 591.96 376.14" style="enable-background:new 0 0 591.96 376.14;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#1E1E1E;}
+                </style>
+                <path class="st0" d="M341.08,158.98c4.92,2.03,8.52,3.56,12.16,5.01c13.08,5.23,25.23,12.1,36.15,21c3.7,3.02,6.44,3.27,10.24-0.04
+                  c9.64-8.39,21.14-13.8,32.87-18.96c-0.57-4.28-4.35-5.83-6.74-8.35c-17.66-18.68-24.14-40.55-17.31-65.36
+                  c6.93-25.15,23.72-41.22,49.03-47.74c29.01-7.47,59.14,5.57,74.49,31.78c14.94,25.51,10.81,58.97-9.98,80.43
+                  c-2.53,2.61-5.28,5.02-7.87,7.47c0.29,3.43,3.34,3.04,5.18,3.87c39.71,17.98,63.44,48.41,71.46,91.19c1.36,7.26,1.07,14.6,1.2,21.93
+                  c0.06,3.34-1.29,4.92-4.72,4.73c-2.33-0.13-4.66,0-7,0c-39.66,0-79.31,0-118.97,0c-2.33,0-4.67-0.07-7,0.03
+                  c-6.41,0.27-6.43,0.3-6.34,6.88c0.09,6.66,0.04,13.33,0.36,19.99c1.59,32.5-25.66,62.37-61.29,63.24c-1.33,0.03-2.67,0.06-4,0.06
+                  c-58.32,0-116.64-0.01-174.95,0.01c-22.06,0-40.16-8.11-53.61-25.93c-8.36-11.07-11.9-23.74-12.13-37.37
+                  c-0.12-6.98,0.27-14,0.96-20.94c0.44-4.44-1.01-6.18-5.33-5.97c-2.33,0.11-4.66,0-7,0c-38.66,0-77.31,0-115.97,0c-2,0-4,0.03-6-0.01
+                  c-8.95-0.14-9.03-0.15-8.97-8.7c0.22-31.42,11.22-58.52,32.72-81.39c10.88-11.57,23.72-20.34,38.16-26.86
+                  c2.32-1.05,5.02-1.44,7.31-4.32c-19.28-15.83-28.8-36.07-26.74-61.2c1.34-16.33,8.21-30.15,19.74-41.5
+                  c24.88-24.5,64.36-25.88,91-3.33c10.72,9.08,17.92,20.52,21.43,34.15c3.41,13.24,2.76,26.27-1.47,39.35
+                  c-4.33,13.39-13.27,23.43-24.04,33.21c13.38,6.13,25.28,11.97,35.49,20.61c2.02,1.71,4.09,1.96,6.28,0.21
+                  c14.66-11.69,31-20.37,50.75-27c-28.97-21.04-43.23-47.92-40.27-82.14c2-23.2,12.61-42.69,30.67-57.58
+                  c35.68-29.41,88.13-24.84,118.92,9.69C386.58,59.01,394.73,118.79,341.08,158.98z M295.36,357.33c11.33,0,22.65,0,33.98,0
+                  c18.66-0.01,37.32,0.36,55.96-0.12c26.58-0.69,44.07-18.67,44.48-45.16c0.14-8.98-0.33-17.91-1.63-26.87
+                  c-10.19-70.14-76.45-121.24-146.83-113.29c-73.08,8.26-126.11,72.1-120.26,145.25c0.8,10.02,4.68,18.62,11.41,25.99
+                  c9.66,10.59,21.96,14.31,35.93,14.24C237.4,357.23,266.38,357.33,295.36,357.33z M362.03,85.63c0.1-37.26-29.89-67.28-67.16-67.2
+                  c-36.46,0.07-66.68,30.27-66.84,66.82c-0.17,36.63,30.72,67.44,67.47,67.3C332.03,152.41,361.93,122.33,362.03,85.63z
+                  M508.35,267.14c18.33,0,36.65,0.03,54.98-0.01c9.74-0.02,10.07-0.29,8.22-9.23c-2.38-11.49-6.58-22.3-12.68-32.38
+                  c-29.82-49.29-96.63-63.18-143.08-29.69c-7.81,5.63-7.96,5.8-2.12,12.83c12.73,15.32,22.03,32.53,27.79,51.51
+                  c1.7,5.61,4.39,7.17,9.91,7.09C470.36,266.96,489.35,267.13,508.35,267.14z M83.14,267.14c18.33,0,36.66,0.03,54.99-0.01
+                  c8.57-0.02,8.66-0.05,11.12-7.77c4.19-13.09,9.99-25.36,17.52-36.89c3.84-5.88,7.94-11.54,12.57-16.77
+                  c3.01-3.39,2.54-5.65-1.07-7.91c-2.25-1.41-4.29-3.17-6.53-4.61c-33.62-21.62-77.26-20.89-110.26,1.99
+                  c-21.47,14.88-34.98,35.3-41.08,60.62c-2.63,10.93-2.22,11.33,8.73,11.35C47.15,267.16,65.14,267.14,83.14,267.14z M69.44,109.47
+                  c-0.17,27.13,21.35,49.07,48.29,49.24c26.78,0.17,49.08-21.69,49.45-48.47c0.37-26.31-22.18-49.2-48.64-49.36
+                  C91.69,60.71,69.6,82.57,69.44,109.47z M472.91,158.71c26.87,0.21,49.19-21.67,49.35-48.38c0.16-26.91-21.69-49.28-48.34-49.47
+                  c-26.75-0.19-49,21.7-49.29,48.52C424.33,136.31,446.05,158.5,472.91,158.71z"/>
+                </svg>
+                1525
+              </span>
+              <h3>Course Completion <span>50%</span></h3>
+              <ul class="list-unstyled">
+                <li class="head">
+                  <div class="row">
+                    <div class="col-9">
+                      <span>10 Lessons</span>
+                    </div>
+                    <div class="col-3 text-right">
+                      <span>24:15m</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">01</span>
+                      <span class="title">Welcome</span>
+                    </div>
+                    <div class="col-2">
+                      <span>0:43</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">02</span>
+                      <span class="title">Navigating the image</span>
+                    </div>
+                    <div class="col-2">
+                      <span>2:15</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number quiz">Q</span>
+                      <span class="title">Quiz 1: Navigation</span>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">03</span>
+                      <span class="title">Simple but effective selections</span>
+                    </div>
+                    <div class="col-2">
+                      <span>6:12</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number quiz"><img src="./assets/img/list-video.png"></span>
+                      <span class="title">Quiz 2: Color balance</span>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">04</span>
+                      <span class="title">Navigating the image</span>
+                    </div>
+                    <div class="col-2">
+                      <span>6:27</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">05</span>
+                      <span class="title">Moving content</span>
+                    </div>
+                    <div class="col-2">
+                      <span>4:23</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">06</span>
+                      <span class="title">Simple but effective selections</span>
+                    </div>
+                    <div class="col-2">
+                      <span>8:12</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number quiz">Q</span>
+                      <span class="title">Quiz 3: Moving content</span>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">07</span>
+                      <span class="title">Moving content</span>
+                    </div>
+                    <div class="col-2">
+                      <span>4:23</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">08</span>
+                      <span class="title">Simple but effective selections</span>
+                    </div>
+                    <div class="col-2">
+                      <span>8:12</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number quiz">Q</span>
+                      <span class="title">Quiz 4: Exporting</span>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">09</span>
+                      <span class="title">Moving content</span>
+                    </div>
+                    <div class="col-2">
+                      <span>4:23</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10">
+                      <span class="number">10</span>
+                      <span class="title">Simple but effective selections</span>
+                    </div>
+                    <div class="col-2">
+                      <span>8:12</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="col-12">
+            <div class="heading">
+              <h3>Meet Your Teacher</h3>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-3 col-4">
+                  <img src="./assets/img/teacher1.png" class="img-fluid rounded-start" alt="teacher image">
+                </div>
+                <div class="col-md-9 col-8">
+                  <div class="card-body">
+                    <h6>Joined March 2018</h6>
+                    <h5 class="card-title">Azza Khair Elseed</h5>
+                    <p class="job">Graphic Designer</p>
+                    <a href="#" class="facebook">
+                      <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.05851 2.10741H6.1883V0.0893734C5.99338 0.0618739 5.32304 0 4.54235 0C2.91341 0 1.79755 1.0508 1.79755 2.98211V4.75953H0V7.01554H1.79755V12.6921H4.00143V7.01607H5.72628L6.00009 4.76006H4.00092V3.20581C4.00143 2.55375 4.17263 2.10741 5.05851 2.10741Z" fill="#1A191D"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="insta">
+                      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.62066 7.63241e-07L9.26152 3.46928e-07C11.3971 1.55354e-07 13.1289 1.7761 13.1289 3.96627L13.1289 8.7258C13.1289 10.916 11.3971 12.6921 9.26152 12.6921L4.62066 12.6921C2.48509 12.6921 0.75327 10.916 0.75327 8.7258L0.75327 3.96627C0.753269 1.7761 2.48508 9.54814e-07 4.62066 7.63241e-07ZM1.91349 8.7258C1.91349 10.2568 3.12785 11.5022 4.62066 11.5022L9.26152 11.5022C10.7543 11.5022 11.9687 10.2568 11.9687 8.7258L11.9687 3.96627C11.9687 2.43529 10.7543 1.18988 9.26152 1.18988L4.62066 1.18988C3.12784 1.18988 1.91349 2.43529 1.91349 3.96627L1.91349 8.7258ZM6.94125 3.17383C8.64986 3.17383 10.0352 4.59455 10.0352 6.34685C10.0352 8.09915 8.64986 9.51987 6.94125 9.51987C5.23264 9.51987 3.84734 8.09915 3.84734 6.34685C3.84734 4.59455 5.23264 3.17383 6.94125 3.17383ZM6.94125 8.32999C8.0071 8.32999 8.87494 7.43995 8.87494 6.34685C8.87494 5.25295 8.0071 4.36371 6.94125 4.36371C5.8754 4.36371 5.00755 5.25295 5.00755 6.34685C5.00755 7.43995 5.8754 8.32999 6.94125 8.32999ZM3.20284 2.93452C3.20284 3.16803 3.38741 3.35733 3.61509 3.35733C3.84277 3.35733 4.02734 3.16803 4.02734 2.93452C4.02734 2.70102 3.84277 2.51172 3.61509 2.51172C3.38741 2.51172 3.20284 2.70102 3.20284 2.93452Z" fill="#1A191D"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="twiter">
+                      <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0727 2.09701C13.5759 2.32048 13.0466 2.4686 12.4948 2.54052C13.0625 2.1929 13.4958 1.64664 13.6995 0.988212C13.1702 1.31186 12.5858 1.54047 11.963 1.66804C11.4604 1.11921 10.7441 0.779297 9.96264 0.779297C8.44652 0.779297 7.22595 2.04135 7.22595 3.58853C7.22595 3.81114 7.24432 4.02519 7.2894 4.22897C5.01273 4.1151 2.9982 2.99603 1.64488 1.29131C1.40862 1.71171 1.27003 2.1929 1.27003 2.71091C1.27003 3.68357 1.75842 4.54577 2.48643 5.04494C2.04645 5.03638 1.61483 4.90538 1.24916 4.69903C1.24916 4.70759 1.24916 4.71873 1.24916 4.72986C1.24916 6.09466 2.1984 7.22828 3.44318 7.48943C3.22027 7.55193 2.97733 7.5819 2.7252 7.5819C2.54988 7.5819 2.37288 7.57162 2.20675 7.53395C2.56156 8.64617 3.56841 9.46385 4.76561 9.49039C3.8339 10.2379 2.65089 10.6882 1.37021 10.6882C1.14563 10.6882 0.930239 10.678 0.714844 10.6497C1.9279 11.452 3.36554 11.91 4.91588 11.91C9.95512 11.91 12.7102 7.62899 12.7102 3.91817C12.7102 3.79402 12.706 3.67415 12.7002 3.55513C13.2437 3.15956 13.7003 2.66553 14.0727 2.09701Z" fill="#1A191D"/>
+                      </svg>
+                    </a>
+                    <a href="#" class="youtube">
+                      <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7232 2.02487C13.5693 1.43318 13.1181 0.966759 12.5459 0.807436C11.5007 0.511719 7.31939 0.511719 7.31939 0.511719C7.31939 0.511719 3.13829 0.511719 2.093 0.796224C1.53183 0.955379 1.06964 1.43326 0.915707 2.02487C0.640625 3.10557 0.640625 5.34679 0.640625 5.34679C0.640625 5.34679 0.640625 7.59932 0.915707 8.66872C1.0698 9.26033 1.52082 9.72675 2.09308 9.88607C3.1493 10.1819 7.31955 10.1819 7.31955 10.1819C7.31955 10.1819 11.5007 10.1819 12.5459 9.89736C13.1182 9.73813 13.5693 9.27171 13.7234 8.6801C13.9984 7.59932 13.9984 5.35817 13.9984 5.35817C13.9984 5.35817 14.0094 3.10557 13.7232 2.02487ZM5.98817 7.41732V3.27627L9.46509 5.34679L5.98817 7.41732Z" fill="#1A191D"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="desc">
+              He has worked in different professional fields, such as advertising, press, and animation, and in his spare time, he makes street photography series. He has lived in Madrid, Coruña, and Paris, and has worked for almost every imaginable client, such as Coca-Cola, Nike, Greenpeace, TEDx, BBVA...<a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

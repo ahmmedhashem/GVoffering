@@ -1,0 +1,536 @@
+@import "../../../styles.scss";
+
+.content{
+  background-color: #FFF;
+  padding: 200px 0 100px 0;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: $width1) and (max-width: $width2) {
+    padding: 126px 0 100px 0;
+  }
+  .shape-one{
+    position: absolute;
+    width: 1920px;
+    height: 1752px;
+    left: 18px;
+    top: -1073px;
+    background: radial-gradient(52.1% 52.1% at 50% 50%, #00E384 0%, rgba(255, 255, 255, 0) 100%);
+    @media (min-width: $width1) and (max-width: $width2) {
+      height: 1430px;
+      width: 571px;
+      left: -259px;
+    }
+  }
+  .shape-two{
+    position: absolute;
+    width: 1820px;
+    height: 1200px;
+    left: -1395px;
+    top: 905px;
+    background: radial-gradient(52.1% 52.1% at 50% 50%, #00E384 0%, rgba(255, 255, 255, 0) 100%);
+    @media (min-width: $width1) and (max-width: $width2) {
+      display: none;
+    }
+  }
+  .shape-three{
+    position: absolute;
+    width: 1433px;
+    height: 1457px;
+    left: 1383px;
+    top: 2169px;
+    background: radial-gradient(52.1% 52.1% at 50% 50%, #00E384 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .heading{
+    h3{
+      font-weight: 500;
+      font-size: 64px;
+      color: #1A191D;
+      margin-bottom: 77px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        font-size: 36px;
+        margin-bottom: 28px;
+      }
+    }
+  }
+  .img-cont{
+    img{
+      width: 100%;
+    }
+  }
+  .nav-tab{
+    .nav-tabs{
+      border-bottom: 1px solid #C4C4C4;
+      li{
+        margin-right: 58px;
+        padding: 17px 0;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 13px 0;
+          margin-right: 48px;
+        }
+        button{
+          font-size: 18px;
+          text-transform: capitalize;
+          color: #707070;
+          text-decoration: none;
+          background: unset;
+          border: none;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 14px;
+          }
+        }
+
+      }
+      li.active{
+        border-bottom: 2px solid #00F37E;
+        a{
+          font-weight: bold;
+        }
+        button{
+          color: #1A191D;
+        }
+      }
+    }
+    .tab-content{
+      margin: 53px 0 58px 0;
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin: 22px 0 22px 0;
+      }
+      h3{
+        font-weight: bold;
+        font-size: 36px;
+        text-transform: capitalize;
+        color: #1A191D;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 24px;
+          display: none;
+        }
+      }
+      #home{
+        p{
+          font-weight: 300;
+          font-size: 24px;
+          color: #707070;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 14px;
+          }
+          .sohw-more{
+            display: none;
+            font-weight: bold;
+            color: #00FF85;
+            background: unset;
+            border: none;
+            @media (min-width: $width1) and (max-width: $width2) {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      .text{
+        margin-top: 44px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          margin-top: 18px;
+          display: none;
+        }
+        h6{
+          font-weight: 300;
+          font-size: 24px;
+          color: #1A191D;
+        }
+        p{
+          font-weight: 300;
+          font-size: 24px;
+          color: #1A191D;
+          margin-bottom: 60px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-bottom: 22px;
+          }
+        }
+        ol{
+          list-style: disc;
+          li{
+            font-weight: 300;
+            font-size: 24px;
+            color: #1A191D;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    hr{
+      background: #C4C4C4;
+      opacity: 1;
+    }
+
+    h3,p{
+      color: #1A191D;
+    }
+    .card-con{
+      background: rgba(196, 196, 196, 0.2);
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      height: 204.23px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin-bottom: 16px;
+        height: 175px;
+      }
+
+      h4{
+        font-weight: 500;
+        font-size: 18px;
+        text-align: justify;
+        color: #1A191D;
+        margin-bottom: 20px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          text-align: center;
+          font-size: 12px;
+          margin-bottom: 12px;
+        }
+      }
+      .precent{
+        width: fit-content;
+        margin: 22px auto 10px;
+        .one{
+          width: 11.38px;
+          height: 35.49px;
+          background: rgba(255, 153, 0, 0.4);
+          border-radius: 10px;
+          display: inline-block;
+          margin: 0 3px;
+        }
+        .two{
+          width: 11.38px;
+          height: 43.51px;
+          background: rgba(196, 196, 196, 0.2);
+          border-radius: 10px;
+          display: inline-block;
+          margin: 0 3px;
+        }
+        .three{
+          width: 11.38px;
+          height: 54.23px;
+          background: rgba(196, 196, 196, 0.2);
+          border-radius: 10px;
+          display: inline-block;
+          margin: 0 3px;
+        }
+      }
+      button{
+        background: #FF9900;
+        border-radius: 5px;
+        border: none;
+        font-weight: normal;
+        font-size: 14px;
+        color: #FFFFFF;
+        padding: 3px 11px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 12px;
+        }
+      }
+      .progress{
+        margin-bottom: 11px;
+        height: 25px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 12px;
+          height: 22px;
+        }
+        .green{
+          background: #22D06B;
+        }
+        .yellow{
+          background: #FABF2D;
+        }
+        .orange{
+          background: #EC7100;
+        }
+        .red{
+          background: #D30000;
+        }
+        .progress-bar{
+          border-radius: 7px;
+        }
+      }
+      .unback{
+        background-color: #f3f3f3;
+        margin-bottom: 24px;
+        height: 25px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 12px;
+          margin-bottom: 14px;
+        }
+        .progress-bar{
+          background: #1A191D;
+          border-radius: 7px;
+        }
+      }
+      .progress:last-child{
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .comments-hr{
+    display: none;
+    @media (min-width: $width1) and (max-width: $width2) {
+      display: block;
+      background: #C4C4C4;
+      opacity: 1;
+    }
+  }
+  .comments{
+    margin-top: 81px;
+    @media (min-width: $width1) and (max-width: $width2) {
+      margin-top: 38px;
+    }
+    .card{
+      background: unset;
+      border: none;
+      margin-bottom: 21px!important;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      .card-body{
+        padding: 44px 5px 0 21px;
+        h6{
+          font-weight: 500;
+          font-size: 13px;
+          color: #050505;
+          margin-bottom: 3px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 12px;
+          }
+        }
+        .card-title{
+          font-weight: 500;
+          font-size: 24px;
+          color: #050505;
+          margin-bottom: 3px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    p.info{
+      font-weight: 300;
+      font-size: 18px;
+      text-align: justify;
+      color: #1A191D;
+    }
+    hr{
+      margin: 32px 0;
+    }
+  }
+  .interseted{
+    h3{
+      @media (min-width: $width1) and (max-width: $width2) {
+        font-size: 24px;
+        margin: 35px 0 35px 0;
+      }
+    }
+    .card{
+      margin-bottom: 74px;
+      .card-body{
+        padding: 34px 30px 30px 30px;
+        h5{
+          a{
+            font-weight: bold;
+            font-size: 33px;
+            text-transform: capitalize;
+            color: #1A191D;
+            text-decoration: none;
+          }
+
+        }
+        p{
+          font-weight: 300;
+          font-size: 12px;
+          text-align: justify;
+          color: #707070;
+          margin-bottom: 55px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-bottom: 32px;
+          }
+        }
+        span{
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 161%;
+          text-align: justify;
+          color: #707070;
+          svg{
+            width: 13px;
+          }
+        }
+        .like{
+          margin-left: 22px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-left: 10px;
+          }
+        }
+        .discover{
+          font-weight: 500;
+          font-size: 12px;
+          text-transform: capitalize;
+          color: #FFFFFF;
+          background: #00C66A;
+          border-radius: 9px;
+          text-decoration: none;
+          padding: 5px 33px;
+          float: right;
+          display: none;
+          @media (min-width: $width1) and (max-width: $width2) {
+            display: inline-block;
+          }
+
+        }
+      }
+    }
+  }
+
+  .meet-teacher{
+    position: relative;
+    padding-left: 100px;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding-left: 20px;
+    }
+    .line{
+      transform: rotate(90deg);
+      position: relative;
+      left: -900px;
+      top: 987px;
+      background: #C4C4C4;
+      opacity: 1;
+      width: 1700px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        left: 0px;
+        top: 0;
+        transform: none;
+        width: 96%;
+        margin-top: -38px;
+      }
+    }
+    .heading{
+      h3{
+        font-weight: bold;
+        font-size: 36px;
+        text-transform: capitalize;
+        color: #1A191D;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 24px;
+          margin-bottom: 22px;
+        }
+      }
+    }
+    .card{
+      background: unset;
+      border: none;
+      margin-bottom: 41px!important;
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin-bottom: 16px!important;
+      }
+      img{
+        width: 108px;
+        height: 108px;
+      }
+      .card-body{
+        padding: 0px 0px 0 15px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 10px 0px 0 15px;
+        }
+        h6{
+          font-weight: 500;
+          font-size: 13px;
+          color: #050505;
+          margin-bottom: 3px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 12px;
+          }
+        }
+        .card-title{
+          font-weight: 500;
+          font-size: 24px;
+          color: #050505;
+          margin-bottom: 3px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 18px;
+          }
+        }
+        .job{
+          background: linear-gradient(90deg, #00FF85 0%, #22D06B 222.91%);
+          border-radius: 4px;
+          font-weight: 500;
+          font-size: 10px;
+          color: #FFFFFF;
+          width: fit-content;
+          padding: 5px 8px;
+          margin-bottom: 3px;
+        }
+        a{
+          margin-right: 10px;
+          svg{
+            width: 13.36px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    p.desc{
+      font-weight: 300;
+      font-size: 24px;
+      color: #1A191D;
+      margin-bottom: 52px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #1A191D;
+        @media (min-width: $width1) and (max-width: $width2) {
+          color: #00FF85;
+        }
+      }
+
+    }
+    .course-list{
+      h3{
+        font-weight: bold;
+        font-size: 36px;
+        text-transform: capitalize;
+        color: #1A191D;
+        margin-bottom: 41px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 24px;
+          margin-bottom: 35px;
+        }
+      }
+      ul{
+        padding-left: 0;
+        li{
+          margin-bottom: 30px;
+          img{
+            width: 74px;
+            height: 54px;
+          }
+          span{
+            font-weight: 500;
+            font-size: 18px;
+            color: #1A191D;
+            margin-left: 12px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

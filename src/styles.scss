@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+$width1: 300px;
+$width2:    770px;
+$textColor: #FFF;
+
+
+h2,h3,h4,h5,h6{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+p{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+a,button{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+li{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+span{
+  font-family: Roboto;
+  font-style: normal;
+}
+label,input,select{
+  font-family: Roboto;
+  font-style: normal;
+}
+::placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  color: $textColor;
+}
+
+
+::placeholder{
+    color: #FFF;
+}
+
+button,input,select{
+    &:hover{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    &:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+}
+
+a{
+    cursor: pointer;
+}
+
+.content{
+  .interseted{
+    h3{
+      font-weight: bold;
+      font-size: 36px;
+      text-transform: capitalize;
+      color: #1A191D;
+      margin: 47px 0 63px 0;
+    }
+    .owl-carousel{
+      position: relative;
+      .owl-item{
+        .card{
+          margin: 0 5px;
+        }
+      }
+      .owl-nav{
+
+        .owl-prev{
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          left: -33px;
+          top: 66px;
+          background: #00F37E;
+          border-radius: 50%;
+          line-height: 64px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            width: 35px;
+            height: 35px;
+            top: 116px;
+            left: -16px;
+          }
+          img{
+            @media (min-width: $width1) and (max-width: $width2) {
+              width: 9px;
+              position: absolute;
+              top: 9px;
+              left: 13px;
+            }
+          }
+        }
+        .owl-next{
+          @extend .owl-prev;
+          left: unset;
+          right: -33px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            right: -16px;
+          }
+        }
+      }
+    }
+
+  }
+}
+.content{
+  .nav-tabs{
+    .owl-item{
+      // width: fit-content!important;
+    }
+    .owl-nav{
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin-top: -1px;
+      }
+      .owl-prev{
+        display: none;
+      }
+      .owl-next{
+        position: absolute;
+        top: -7px;
+        right: -14px;
+        background: unset;
+      }
+    }
+  }
+}

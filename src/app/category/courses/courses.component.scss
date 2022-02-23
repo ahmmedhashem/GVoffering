@@ -1,0 +1,171 @@
+@import "../../../styles.scss";
+
+
+.heading-mob{
+  position: relative;
+  display: none;
+  width: 93%;
+  margin: 0 auto;
+  @media (min-width: $width1) and (max-width: $width2) {
+    display: block;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-weight: 500;
+    color: #FFF;
+    @media (min-width: $width1) and (max-width: $width2) {
+      background: #1A191D;
+      border-radius: 50px;
+      font-size: 18px;
+      text-align: justify;
+      padding: 0 38px;
+      line-height: 48px;
+    }
+    .minus{
+      padding: 0px 7px;
+      border: 1px solid #DDD;
+      border-radius: 50%;
+      margin-left: 52%;
+      display: none;
+      @media (min-width: $width1) and (max-width: $width2) {
+        display: inline;
+      }
+    }
+  }
+}
+.courses{
+  padding: 92px 0;
+  background: #1A191D;
+  box-shadow: 0px -56px 176px -102px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  @media (min-width: $width1) and (max-width: $width2) {
+    padding: 20px 0;
+  }
+  .shape-one{
+    position: absolute;
+    width: 1048px;
+    height: 1066px;
+    left: -620px;
+    top: 0px;
+    background: radial-gradient(52.1% 52.1% at 50% 50%, #00E384 0%, rgba(26, 25, 29, 0) 100%);
+    @media (min-width: $width1) and (max-width: $width2) {
+      display: none;
+    }
+  }
+  .shape-two{
+    position: absolute;
+    width: 1048px;
+    height: 1066px;
+    right: -840px;
+    top: 459px;
+    background: radial-gradient(52.1% 52.1% at 50% 50%, #00E384 0%, rgba(26, 25, 29, 0) 100%);
+    @media (min-width: $width1) and (max-width: $width2) {
+      display: none;
+    }
+  }
+  .heading{
+    margin-bottom: 74px;
+    position: relative;
+    @media (min-width: $width1) and (max-width: $width2) {
+      display: none;
+    }
+    h3{
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 69px;
+      color: #FFF;
+      @media (min-width: $width1) and (max-width: $width2) {
+        background: #1A191D;
+        border-radius: 50px;
+        font-size: 18px;
+        text-align: justify;
+        padding: 0 38px;
+        line-height: 50px;
+      }
+    }
+  }
+  .card{
+    margin-bottom: 74px;
+    @media (min-width: $width1) and (max-width: $width2) {
+      margin-bottom: 20px;
+    }
+    .card-body{
+      padding: 44px 43px 39px 43px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        padding: 31px 39px 31px 39px;
+      }
+      h5{
+        a{
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 111.8%;
+          text-transform: capitalize;
+          color: #1A191D;
+          text-decoration: none;
+        }
+
+      }
+      p{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 161%;
+        text-align: justify;
+        color: #707070;
+        margin-bottom: 79px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          margin-bottom: 32px;
+        }
+      }
+      span{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 161%;
+        text-align: justify;
+        color: #707070;
+        svg{
+          width: 13px;
+        }
+      }
+      .like{
+        margin-left: 22px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          margin-left: 10px;
+        }
+      }
+      .discover{
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        background: #00C66A;
+        border-radius: 9px;
+        text-decoration: none;
+        padding: 5px 33px;
+        float: right;
+        display: none;
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: inline-block;
+        }
+
+      }
+
+    }
+  }
+  .more{
+    background: linear-gradient(90deg, #00FF85 0%, #009966 222.91%);
+    border-radius: 4px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 39px;
+    width: auto;
+    margin: 0 auto;
+    @media (min-width: $width1) and (max-width: $width2) {
+      width: 94%;
+      text-align: center;
+      padding: 10px 39px;
+      border-radius: 9px;
+    }
+  }
+
+}

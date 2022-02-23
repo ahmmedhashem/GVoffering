@@ -1,0 +1,252 @@
+@import "../../../styles.scss";
+
+.learning{
+  padding: 92px 0;
+  overflow: hidden;
+  @media (min-width: $width1) and (max-width: $width2) {
+    padding: 20px 0;
+  }
+  .heading{
+    margin-bottom: 74px;
+    position: relative;
+    @media (min-width: $width1) and (max-width: $width2) {
+      margin-bottom: 20px;
+    }
+    h3{
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 69px;
+      color: #1A191D;
+      @media (min-width: $width1) and (max-width: $width2) {
+        background: linear-gradient(90deg, rgba(196, 196, 196, 0.4) 0%, rgba(196, 196, 196, 0) 100%);
+        border-radius: 50px;
+        font-size: 18px;
+        text-align: justify;
+        padding: 0 38px;
+        line-height: 48px;
+      }
+      .minus{
+        padding: 0px 7px;
+        border: 1px solid #DDD;
+        border-radius: 50%;
+        margin-left: 44%;
+        display: none;
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: inline;
+        }
+      }
+
+    }
+  }
+  .card{
+    margin-bottom: 74px;
+    @media (min-width: $width1) and (max-width: $width2) {
+      margin-bottom: 20px;
+    }
+    .card-body{
+      padding: 44px 43px 39px 43px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        padding: 31px 39px 31px 39px;
+      }
+      h5{
+        button{
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 111.8%;
+          text-transform: capitalize;
+          color: #1A191D;
+          text-decoration: none;
+          background: unset;
+          border: none;
+          padding: 0;
+        }
+
+      }
+      p{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 161%;
+        text-align: justify;
+        color: #707070;
+        margin-bottom: 79px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          margin-bottom: 32px;
+        }
+      }
+      span{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 161%;
+        text-align: justify;
+        color: #707070;
+        svg{
+          width: 13px;
+        }
+      }
+      .like{
+        margin-left: 22px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          margin-left: 10px;
+        }
+      }
+      .discover{
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        background: #00C66A;
+        border-radius: 9px;
+        text-decoration: none;
+        padding: 5px 33px;
+        float: right;
+        display: none;
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: inline-block;
+        }
+
+      }
+
+    }
+  }
+  .more{
+    background: linear-gradient(90deg, #00FF85 0%, #009966 222.91%);
+    border-radius: 4px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 39px;
+    width: auto;
+    margin: 0 auto;
+    @media (min-width: $width1) and (max-width: $width2) {
+      width: 94%;
+      text-align: center;
+      padding: 10px 39px;
+      border-radius: 9px;
+    }
+  }
+  .pop-up{
+    position: fixed;
+    top: 30px;
+    left: 17%;
+    width: 1135px;
+    z-index: 9;
+    display: none;
+    @media (min-width: $width1) and (max-width: $width2) {
+      left: 3%;
+      width: 94%;
+    }
+    .close{
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      z-index: 9;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      @media (min-width: $width1) and (max-width: $width2) {
+        width: 25px;
+        height: 25px;
+        top: 25px;
+        right: 25px;
+      }
+      button{
+        font-weight: 300;
+        font-size: 64px;
+        color: #FFFFFF;
+        transform: rotate(45deg);
+        background: unset;
+        border: unset;
+        position: relative;
+        top: -29px;
+        left: -3px;
+        z-index: 9;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 36px;
+          top: -16px;
+          left: -3px;
+        }
+      }
+    }
+    .card{
+      padding: 30px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        padding: 14px;
+      }
+      img{
+        @media (min-width: $width1) and (max-width: $width2) {
+          height: 278px;
+        }
+      }
+      .card-body{
+        padding: 44px 0px 39px 0px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 20px 12px 20px 12px;
+        }
+        .card-title{
+          font-weight: bold;
+          font-size: 36px;
+          text-transform: capitalize;
+          color: #1A191D;
+
+        }
+        .card-text{
+          font-weight: 300;
+          font-size: 18px;
+          text-align: justify;
+          color: #707070;
+          margin-bottom: 54px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 12px;
+            margin-bottom: 40px;
+          }
+        }
+        span{
+          font-weight: 300;
+          font-size: 18px;
+          color: #1A191D;
+          margin-right: 30px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 12px;
+            margin-right: 6%;
+          }
+          .back{
+            background: #FF9900;
+            border-radius: 5px;
+            padding: 3px 12px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 12px;
+              padding: 3px 6px;
+            }
+          }
+          svg{
+            width: 19px;
+          }
+        }
+        a{
+          background: linear-gradient(90deg, #00FF85 0%, rgba(0, 255, 133, 0) 222.91%);
+          border-radius: 4px;
+          padding: 12px 55px;
+          font-weight: 500;
+          font-size: 18px;
+          color: #FFFFFF;
+          float: right;
+          text-decoration: none;
+          @media (min-width: $width1) and (max-width: $width2) {
+            font-size: 12px;
+            padding: 15px 6px;
+            width: 100%;
+            float: none;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+}

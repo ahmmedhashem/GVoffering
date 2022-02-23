@@ -1,0 +1,127 @@
+@import "../../../styles.scss";
+
+.slider{
+  background: #F7F7F7;
+  padding: 212px 0;
+  overflow: hidden;
+  position: relative;
+  @media (min-width: $width1) and (max-width: $width2) {
+    padding: 124px 0;
+  }
+  .shape{
+    position: absolute;
+    width: 1920px;
+    height: 1952px;
+    left: 0px;
+    top: -822px;
+    background: radial-gradient(52.1% 52.1% at 50% 50%, #00E384 0%, rgba(255, 255, 255, 0) 100%);
+    @media (min-width: $width1) and (max-width: $width2) {
+      width: 908px;
+      height: 919px;
+      left: -427px;
+      top: -229px;
+    }
+  }
+  .container{
+    padding: 0 100px;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 0 20px;
+    }
+    .heading{
+      margin-bottom: 74px;
+      position: relative;
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin-bottom: 30px;
+      }
+      h3{
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 69px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 36px;
+          text-align: justify;
+          line-height: 33px;
+        }
+      }
+      p{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 131%;
+        @media (min-width: $width1) and (max-width: $width2) {
+          font-size: 14px;
+          text-align: justify;
+        }
+      }
+    }
+    .card{
+      margin-bottom: 74px;
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin-bottom: 20px;
+      }
+      .card-body{
+        padding: 44px 43px 39px 43px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding: 31px 39px 31px 39px;
+        }
+        h5{
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-bottom: 11px;
+          }
+          a{
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 111.8%;
+            text-transform: capitalize;
+            color: #1A191D;
+            text-decoration: none;
+          }
+
+        }
+        p{
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 161%;
+          text-align: justify;
+          color: #707070;
+          margin-bottom: 79px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-bottom: 35px;
+          }
+        }
+        span{
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 161%;
+          text-align: justify;
+          color: #707070;
+          svg{
+            width: 13px;
+          }
+        }
+        .like{
+          margin-left: 22px;
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-left: 10px;
+          }
+        }
+        .discover{
+          font-weight: 500;
+          font-size: 12px;
+          text-transform: capitalize;
+          color: #FFFFFF;
+          background: #00C66A;
+          border-radius: 9px;
+          text-decoration: none;
+          padding: 5px 33px;
+          float: right;
+          display: none;
+          @media (min-width: $width1) and (max-width: $width2) {
+            display: inline-block;
+          }
+
+        }
+      }
+    }
+  }
+
+}
