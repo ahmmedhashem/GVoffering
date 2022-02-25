@@ -12,7 +12,7 @@
           <img src="./assets/img/lesson-bg.png" alt="...">
         </div>
         <div class="nav-tab">
-          <ul class="nav nav-tabs">
+          <ul class="nav nav-tabs mobile">
             <owl-carousel-o [options]="customOptions">
                 <ng-template carouselSlide >
                   <li class="active home"><button type="button" (click)="sowDesc($event)">Description</button></li>
@@ -27,6 +27,12 @@
                   <li class="office"><button type="button" (click)="showOff($event)" >Office Hours</button></li>
                 </ng-template>
             </owl-carousel-o>
+          </ul>
+          <ul class="nav nav-tabs laptop">
+            <li class="active home"><button type="button" (click)="sowDesc($event)">Description</button></li>
+            <li class="menu1"><button type="button" (click)="showRev($event)" >Discussion</button></li>
+            <li class="projects"><button type="button" (click)="showPro($event)" >Projects & Ressources</button></li>
+            <li class="office"><button type="button" (click)="showOff($event)" >Office Hours</button></li>
           </ul>
           <div class="tab-content">
             <div id="home" class="tab-pane active">
@@ -266,10 +272,10 @@
               <ul class="list-unstyled">
                 <li class="head">
                   <div class="row">
-                    <div class="col-9">
+                    <div class="col-10">
                       <span>10 Lessons</span>
                     </div>
-                    <div class="col-3 text-right">
+                    <div class="col-2 text-right">
                       <span>24:15m</span>
                     </div>
                   </div>
@@ -319,7 +325,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number quiz"><img src="./assets/img/list-video.png"></span>
+                      <span class="number quiz gray video"><img src="./assets/img/list-video.png"></span>
                       <span class="title">Quiz 2: Color balance</span>
                     </div>
                     <div class="col-2"></div>
@@ -328,7 +334,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">04</span>
+                      <span class="number gray">04</span>
                       <span class="title">Navigating the image</span>
                     </div>
                     <div class="col-2">
@@ -339,7 +345,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">05</span>
+                      <span class="number gray">05</span>
                       <span class="title">Moving content</span>
                     </div>
                     <div class="col-2">
@@ -350,7 +356,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">06</span>
+                      <span class="number gray">06</span>
                       <span class="title">Simple but effective selections</span>
                     </div>
                     <div class="col-2">
@@ -361,7 +367,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number quiz">Q</span>
+                      <span class="number quiz gray">Q</span>
                       <span class="title">Quiz 3: Moving content</span>
                     </div>
                     <div class="col-2"></div>
@@ -370,7 +376,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">07</span>
+                      <span class="number gray">07</span>
                       <span class="title">Moving content</span>
                     </div>
                     <div class="col-2">
@@ -381,7 +387,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">08</span>
+                      <span class="number gray">08</span>
                       <span class="title">Simple but effective selections</span>
                     </div>
                     <div class="col-2">
@@ -392,7 +398,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number quiz">Q</span>
+                      <span class="number quiz gray">Q</span>
                       <span class="title">Quiz 4: Exporting</span>
                     </div>
                     <div class="col-2"></div>
@@ -401,7 +407,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">09</span>
+                      <span class="number gray">09</span>
                       <span class="title">Moving content</span>
                     </div>
                     <div class="col-2">
@@ -412,7 +418,7 @@
                 <li>
                   <div class="row">
                     <div class="col-10">
-                      <span class="number">10</span>
+                      <span class="number gray">10</span>
                       <span class="title">Simple but effective selections</span>
                     </div>
                     <div class="col-2">

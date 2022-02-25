@@ -35,7 +35,7 @@
           flex-direction: row-reverse;
         }
         .navbar-brand{
-            width: 150px;
+            width: 206px;
             @media (min-width: $width1) and (max-width: $width2) {
               width: 89px;
               position: relative;
@@ -48,7 +48,7 @@
             }
         }
         .collapse{
-            margin-left: 23%;
+            margin-left: 21%;
             @media (min-width: $width1) and (max-width: $width2) {
               background: rgb(0,0,0,0.9);
               padding: 0px 0px 30px 0px;
@@ -61,21 +61,21 @@
               z-index: 99;
             }
             @media (min-width: 1530px) and (max-width: 2000px) {
-              margin-left: 30%;
+              margin-left: 23%;
             }
             ul{
                 @media (min-width: $width1) and (max-width: $width2) {
                   padding: 0;
                 }
                 li{
-                    margin-right: 70px;
+                    margin-right: 60px;
                     @media (min-width: $width1) and (max-width: $width2) {
                       margin-right: unset;
                       padding: 0;
                       border-bottom: 1px solid #b6f5d7;
                     }
                     @media (min-width: 1530px) and (max-width: 2000px) {
-                      margin-right: 90px;
+                      margin-right: 70px;
                     }
                     a{
                         font-weight: bold;
